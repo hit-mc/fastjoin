@@ -1,35 +1,35 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "fastjoin",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "FastJoin",
+  "description": "Quicken your join on a Minecraft server.",
   "authors": [
-    "Me!"
+    "Keuin"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://keuin.cc",
+    "sources": "https://github.com/keuin/fastjoin"
   },
 
-  "license": "CC0-1.0",
+  "license": "GPLv3",
   "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.keuin.fastjoin.FastJoin"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "fastjoin.mixins.json"
   ],
 
   "depends": {
-    "fabricloader": ">=0.7.4",
+    "fabricloader": ">=0.6.0",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.15.2"
   },
   "suggests": {
     "flamingo": "*"
